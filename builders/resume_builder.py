@@ -4,7 +4,7 @@ from builders.experience_builder import ExperienceBuilder
 from builders.header_builder import HeaderBuilder
 from builders.project_builder import ProjectBuilder
 from builders.skillset_builder import SkillsetBuilder
-from constants.resume import ACHIEVEMENTS, EDUCATION, HEADER, INTERNSHIPS, PROJECTS, SKILLSET, WORK_EXPERIENCES
+from constants.resume import ACHIEVEMENTS, EDUCATION, HEADER, HOBBIES, INTERESTS, INTERNSHIPS, LANGUAGES, PROJECTS, SKILLSET, WORK_EXPERIENCES
 from models.detail import Detail
 from models.header import Header
 from models.resume import Resume
@@ -18,6 +18,7 @@ class ResumeBuilder:
     _projects        = []
     _skillset        = []
     _achievements    = []
+    _interests       = []
     _hobbies         = []
     _languages       = []
 
@@ -115,7 +116,40 @@ class ResumeBuilder:
             self._achievements.append(achievement_item)
 
         return self
+    
+    def add_interests(self):
+        if self._input_json.get(INTERESTS) is None:
+            return self
+        
+        if type(self._input_json[INTERESTS]) is not list:
+            return self
+        
+        self._interests = self._input_json[INTERESTS]
+
+        return self
+    
+    def add_hobbies(self):
+        if self._input_json.get(HOBBIES) is None:
+            return self
+        
+        if type(self._input_json[HOBBIES]) is not list:
+            return self
+        
+        self._hobbies = self._input_json[HOBBIES]
+
+        return self
+    
+    def add_languages(self):
+        if self._input_json.get(LANGUAGES) is None:
+            return self
+        
+        if type(self._input_json[LANGUAGES]) is not list:
+            return self
+        
+        self._languages = self._input_json[LANGUAGES]
+
+        return self
 
     
     def build(self):
-        return Resume(self._header, self._educations, self._internships, self._work_experiences, self._projects, self._skillset, self._achievements)
+        return Resume(self._header, self._educations, self._internships, self._work_experiences, self._projects, self._skillset, self._achievements, self._interests, self._hobbies, self._languages)
