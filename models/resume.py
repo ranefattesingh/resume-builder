@@ -13,9 +13,10 @@ class Resume:
     hobbies         = []
     languages       = []
 
-    def __init__(self, header: Header, educations: list, internships: list, work_experiences: list) -> None:
+    def __init__(self, header: Header, educations: list, internships: list, work_experiences: list, projects: list) -> None:
         self.header = header
         self.educations = educations
         self.internships = internships
         self.work_experiences = work_experiences
+        self.projects = projects
 

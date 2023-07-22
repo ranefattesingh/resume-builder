@@ -1,8 +1,8 @@
 from builders.education_builder import EducationBuilder
 from builders.experience_builder import ExperienceBuilder
 from builders.header_builder import HeaderBuilder
-from constants.header import DETAILS
-from constants.resume import EDUCATION, HEADER, INTERNSHIPS, WORK_EXPERIENCES
+from builders.project_builder import ProjectBuilder
+from constants.resume import EDUCATION, HEADER, INTERNSHIPS, PROJECTS, WORK_EXPERIENCES
 from models.detail import Detail
 from models.header import Header
 from models.resume import Resume
@@ -74,5 +74,19 @@ class ResumeBuilder:
 
         return self
     
+    def add_projects(self):
+        if self._input_json.get(PROJECTS) is None:
+            return self
+        
+        projects_array = self._input_json[PROJECTS]
+        if type(projects_array) is not list:
+            return self
+
+        for project in projects_array:
+            projectBuilder = ProjectBuilder(project).add_title().add_description().add_tech_stack().add_other_collaborators().add_motivation().add_my_role().add_is_team_project()
+            self._projects.append(projectBuilder.build())
+
+        return self
+    
     def build(self):
-        return Resume(self._header, self._educations, self._internships, self._work_experiences)
+        return Resume(self._header, self._educations, self._internships, self._work_experiences, self._projects)

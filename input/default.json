@@ -189,7 +189,8 @@
             "other_collaborators": [
 
             ],
-            "my_role": []
+            "my_role": [],
+            "is_team_project": false
         }
     ],
     "skillset":[
