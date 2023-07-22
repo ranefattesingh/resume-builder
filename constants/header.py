@@ -1,6 +1,0 @@
-NAME            = 'name'
-INTRODUCTION    = 'intro'
-DETAILS         = 'details'
-FIELD_ICON      = 'field_icon'
-FIELD_NAME      = 'field_name'
-FIELD_VALUE     = 'field_value'

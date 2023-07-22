@@ -1,5 +1,0 @@
-DEGREE = 'degree'
-INSTITUTE = 'institute'
-BRANCH = 'branch'
-SCORE = 'score'
-COURSE_DURATION = 'course_duration'
