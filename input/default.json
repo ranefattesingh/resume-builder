@@ -1,0 +1,230 @@
+{
+    "header": {
+        "name": "Fattesingh Rane",
+        "details": [
+            {
+                "field_icon": "",
+                "field_name": "email",
+                "field_value": "your-email"
+            },
+            {
+                "field_icon": "",
+                "field_name": "mobile",
+                "field_value": "your-mobile-number"
+            },
+            {
+                "field_icon": "",
+                "field_name": "github",
+                "field_value": "your-github-website"
+            },
+            {
+                "field_icon": "",
+                "field_name": "linkedin",
+                "field_value": "your-linkedin-website"
+            },
+            {
+                "field_icon": "",
+                "field_name": "location",
+                "field_value": "your-current-or-permanent-location"
+            },
+            {
+                "field_icon": "",
+                "field_name": "website",
+                "field_value": "your-website"
+            }
+        ],
+        "intro": "resume-bio"
+    },
+    "education":[
+        {
+            "degree": "degree name",
+            "institute": "collage or university name",
+            "branch": "field of study",
+            "score": "marks scored",
+            "course_duration": {
+                "from": "start date",
+                "to": "end date",
+                "duration": "total duration"
+            }
+        },
+        {
+            "degree": "degree name",
+            "institute": "collage or university name",
+            "branch": "field of study",
+            "score": "marks scored",
+            "course_duration": {
+                "from": "start date",
+                "to": "end date",
+                "duration": "total duration"
+            }
+        },
+        {
+            "degree": "degree name",
+            "institute": "collage or university name",
+            "branch": "field of study",
+            "score": "marks scored",
+            "course_duration": {
+                "from": "start date",
+                "to": "end date",
+                "duration": "total duration"
+            }
+        }
+    ],
+    "internships":[
+        {
+            "title": "internship 1",
+            "organization": "internship organization",
+            "location": "company location",
+            "description": [
+                "tasks handled while on internship 1",
+                "tasks handled while on internship 2"
+            ],
+            "tech_stack":["skill1", "skill2"],
+            "internship_duration": {
+                "from": "start_date",
+                "to": "end-date",
+                "duration": "duration"
+            }
+        },
+        {
+            "title": "internship 2",
+            "organization": "internship organization",
+            "location": "company location",
+            "description": [
+                "tasks handled while on internship 1",
+                "tasks handled while on internship 2"
+            ],
+            "tech_stack":["skill1", "skill2"],
+            "internship_duration": {
+                "from": "start_date",
+                "to": "end-date",
+                "duration": "duration"
+            }
+        },
+        {
+            "title": "internship 1",
+            "organization": "internship organization",
+            "location": "company location",
+            "description": [
+                "tasks handled while on internship 1",
+                "tasks handled while on internship 2"
+            ],
+            "tech_stack":["skill1", "skill2"],
+            "internship_duration": {
+                "from": "start_date",
+                "to": "end-date",
+                "duration": "duration"
+            }
+        }
+    ],
+    "work_experiences":[
+        {
+            "title": "job title",
+            "organization": "company name",
+            "location": "company location",
+            "description": [
+                "tasks handled while on work 1",
+                "tasks handled while on work 2"
+            ],
+            "tech_stack":["skill1", "skill2"],
+            "work_duration": {
+                "from": "start date",
+                "to": "end date",
+                "duration": "duration"
+            }
+        },
+        {
+            "title": "job title",
+            "organization": "company name",
+            "location": "company location",
+            "description": [
+                "tasks handled while on work 1",
+                "tasks handled while on work 2"
+            ],
+            "tech_stack":["skill1", "skill2"],
+            "work_duration": {
+                "from": "start date",
+                "to": "end date",
+                "duration": "duration"
+            }
+        },
+        {
+            "title": "job title",
+            "organization": "company name",
+            "location": "company location",
+            "description": [
+                "tasks handled while on work 1",
+                "tasks handled while on work 2"
+            ],
+            "tech_stack":["skill1", "skill2"],
+            "work_duration": {
+                "from": "start date",
+                "to": "end date",
+                "duration": "duration"
+            }
+        }
+    ],
+    "projects":[
+        {
+            "title": "project-title-1",
+            "project_description": [
+                "description 1",
+                "description 2"
+            ],
+            "motivation": "what motivated you for creating this project",
+            "tech_stack":["skill1", "skill2"],
+            "other_collaborators": [
+                "person1", "person2"
+            ],
+            "my_role": [
+                "you were responsilbe for task 1",
+                "you were responsilbe for task 2"
+            ],
+            "is_team_project": true
+        },
+        {
+            "title": "project-title-2",
+            "project_description": [
+                "description 1",
+                "description 2"
+            ],
+            "motivation": "what motivated you for creating this project",
+            "tech_stack":["skill1", "skill2"],
+            "other_collaborators": [
+            ],
+            "my_role": [
+                "you were responsilbe for task 1",
+                "you were responsilbe for task 2"
+            ],
+            "is_team_project": false
+        }
+    ],
+    "skillset":[
+        {
+            "skill_name": "skill1",
+            "description": [
+                "using this skill so and so was built",
+                "using this skill so and so was built"
+            ]
+        },
+        {
+            "skill_name": "skill2",
+            "description": [
+                "using this skill so and so was built",
+                "using this skill so and so was built"
+            ]
+        }
+    ],
+    "achievements":[
+        {
+            "achievement_name": "achievement 1",
+            "description": [
+                "what this achievement is about"
+            ],
+            "when": "date when achievement was received"
+        }
+    ],
+    "interests":["interest1", "interest2", "interest3"],
+    "hobbies":["hobbie1", "hobbie2", "hobbie3"],
+    "languages":["language1", "language2", "language3"]
+}

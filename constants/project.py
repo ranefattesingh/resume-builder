@@ -1,0 +1,7 @@
+TITLE = 'title'
+PROJECT_DESCRIPTION = 'project_description'
+MOTIVATION = 'motivation'
+TECH_STACK = 'tech_stack'
+MY_ROLE = 'my_role'
+OTHER_COLLABORATORS = 'other_collaborators'
+IS_TEAM_PROJECT = 'is_team_project'

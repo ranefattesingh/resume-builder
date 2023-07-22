@@ -1,0 +1,5 @@
+TITLE           = 'title'
+ORGANIZATION    = 'organization'
+LOCATION        = 'location'
+DESCRIPTION     = 'description'
+TECH_STACK      = 'tech_stack'
