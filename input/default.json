@@ -1,0 +1,212 @@
+{
+    "header": {
+        "name": "Fattesingh Rane",
+        "details": [
+            {
+                "field_icon": "",
+                "field_name": "email",
+                "field_value": "ranefattesingh@gmail.com"
+            },
+            {
+                "field_icon": "",
+                "field_name": "mobile",
+                "field_value": "ranefattesingh@gmail.com"
+            },
+            {
+                "field_icon": "",
+                "field_name": "github",
+                "field_value": "https://github.com/ranefattesingh"
+            },
+            {
+                "field_icon": "",
+                "field_name": "linkedin",
+                "field_value": "https://www.linkedin.com/in/ranefattesingh"
+            },
+            {
+                "field_icon": "",
+                "field_name": "location",
+                "field_value": "Goa, India"
+            },
+            {
+                "field_icon": "",
+                "field_name": "website",
+                "field_value": "in-progress.com"
+            }
+        ],
+        "intro": "some good resume bio",
+        "education":[
+            {
+                "degree": "Bachelor of Engineering",
+                "institute": "Agnel Institute of Technology and Design | Goa University",
+                "branch": "Computer Engineering",
+                "score": "First Class - 61%",
+                "course_duration": {
+                    "from": "June 2015",
+                    "to": "June 2019",
+                    "duration": "4 Years"
+                }
+            },
+            {
+                "degree": "HSSC Board",
+                "institute": "Purushottam Walawalkar Higher Secondary School | Goa Board",
+                "branch": "Science",
+                "score": "First Class - 61%",
+                "course_duration": {
+                    "from": "June 2013",
+                    "to": "June 2015",
+                    "duration": "2 Years"
+                }
+            },
+            {
+                "degree": "SSC Board",
+                "institute": "Shivajiraje High School | Goa Board",
+                "score": "First Class - 74%",
+                "course_duration": {
+                    "from": "June 2001",
+                    "to": "June 2013",
+                    "duration": "12 Years"
+                }
+            }
+        ],
+        "internship":[
+            {
+                "title": "Software Development Intern",
+                "organization": "Svastek Pvt. Ltd.",
+                "location": "Margao, Goa",
+                "description": [
+                    "completed task A",
+                    "completed task B"
+                ],
+                "tech_stack":[],
+                "internship_duration": {
+                    "from": "June 2018",
+                    "to": "",
+                    "duration": "2 weeks"
+                }
+            },
+            {
+                "title": "Software Development Intern",
+                "organization": "Persistant System Ltd.",
+                "location": "Verna, Goa",
+                "description": [
+                    "completed task A",
+                    "completed task B"
+                ],
+                "tech_stack":[],
+                "internship_duration": {
+                    "from": "September 2018",
+                    "to": "",
+                    "duration": "2 months"
+                }
+            },
+            {
+                "title": "Software Development Intern",
+                "organization": "Need to think",
+                "location": "Noida, Uttarpradesh",
+                "description": [
+                    "completed task A",
+                    "completed task B"
+                ],
+                "internship_duration": {
+                    "from": "June 2017",
+                    "to": "",
+                    "duration": "2 weeks"
+                }
+            }
+        ],
+        "work_experience":[
+            {
+                "title": "Software Developer",
+                "organization": "Open Destination Infotech Pvt. Ltd",
+                "location": "Miramar, Goa",
+                "description": [
+                    "completed task A",
+                    "completed task B"
+                ],
+                "tech_stack":[],
+                "work_duration": {
+                    "from": "July 2019",
+                    "to": "May 2021",
+                    "duration": "2 years"
+                }
+            },
+            {
+                "title": "DotNet Developer",
+                "organization": "Designway Agency",
+                "location": "Panaji, Goa",
+                "description": [
+                    "completed task A",
+                    "completed task B"
+                ],
+                "tech_stack":[],
+                "work_duration": {
+                    "from": "May 2021",
+                    "to": "December 2021",
+                    "duration": "7 months"
+                }
+            },
+            {
+                "title": "Software Development Engineer I",
+                "organization": "GYTWorkz Pvt. Ltd",
+                "location": "Hydrabad, Telengana",
+                "description": [
+                    "completed task A",
+                    "completed task B"
+                ],
+                "tech_stack":[],
+                "work_duration": {
+                    "from": "March 2022",
+                    "to": "July 2022",
+                    "duration": "5 Months"
+                }
+            },
+            {
+                "title": "Software Developer",
+                "organization": "All Remote Solutions Pvt. Ltd | Skuad",
+                "location": "Guruguram, Haryana",
+                "description": [
+                    "completed task A",
+                    "completed task B"
+                ],
+                "tech_stack":[],
+                "work_duration": {
+                    "from": "July 2022",
+                    "to": "",
+                    "duration": "Current"
+                }
+            }
+        ],
+        "projects":[
+            {
+                "title": "project-title-1",
+                "project_description": [
+                    "description 1",
+                    "description 2"
+                ],
+                "motivation": "",
+                "tech_stack":[],
+                "other_collaborators": [
+
+                ],
+                "my_role": []
+            }
+        ],
+        "skillset":[
+            {
+                "skill-name": "golang",
+                "usecases": [
+
+                ]
+            }
+        ],
+        "achievements":[
+            {
+                "achievement-name": "whatever achievement",
+                "description": [
+
+                ]
+            }
+        ],
+        "hobbies":[]
+    }
+}
