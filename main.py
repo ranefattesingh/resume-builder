@@ -10,4 +10,6 @@ from models.resume import Resume
 if __name__ == "__main__":
     files = os.listdir(INPUT_DIR_NAME)
     json = decode_json(INPUT_DIR_NAME, files[0])
-    resume = ResumeBuilder(json).add_header().build()
+    resume = ResumeBuilder(json).add_header().add_educations().add_internships().add_work_experience().build()
+
+    print(resume)

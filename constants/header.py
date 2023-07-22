@@ -1,4 +1,3 @@
-HEADER          = 'header'
 NAME            = 'name'
 INTRODUCTION    = 'intro'
 DETAILS         = 'details'
