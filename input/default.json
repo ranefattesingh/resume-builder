@@ -5,175 +5,162 @@
             {
                 "field_icon": "",
                 "field_name": "email",
-                "field_value": "ranefattesingh@gmail.com"
+                "field_value": "your-email"
             },
             {
                 "field_icon": "",
                 "field_name": "mobile",
-                "field_value": "ranefattesingh@gmail.com"
+                "field_value": "your-mobile-number"
             },
             {
                 "field_icon": "",
                 "field_name": "github",
-                "field_value": "https://github.com/ranefattesingh"
+                "field_value": "your-github-website"
             },
             {
                 "field_icon": "",
                 "field_name": "linkedin",
-                "field_value": "https://www.linkedin.com/in/ranefattesingh"
+                "field_value": "your-linkedin-website"
             },
             {
                 "field_icon": "",
                 "field_name": "location",
-                "field_value": "Goa, India"
+                "field_value": "your-current-or-permanent-location"
             },
             {
                 "field_icon": "",
                 "field_name": "website",
-                "field_value": "in-progress.com"
+                "field_value": "your-website"
             }
         ],
-        "intro": "some good resume bio"
+        "intro": "resume-bio"
     },
     "education":[
         {
-            "degree": "Bachelor of Engineering",
-            "institute": "Agnel Institute of Technology and Design | Goa University",
-            "branch": "Computer Engineering",
-            "score": "First Class - 61%",
+            "degree": "degree name",
+            "institute": "collage or university name",
+            "branch": "field of study",
+            "score": "marks scored",
             "course_duration": {
-                "from": "June 2015",
-                "to": "June 2019",
-                "duration": "4 Years"
+                "from": "start date",
+                "to": "end date",
+                "duration": "total duration"
             }
         },
         {
-            "degree": "HSSC Board",
-            "institute": "Purushottam Walawalkar Higher Secondary School | Goa Board",
-            "branch": "Science",
-            "score": "First Class - 61%",
+            "degree": "degree name",
+            "institute": "collage or university name",
+            "branch": "field of study",
+            "score": "marks scored",
             "course_duration": {
-                "from": "June 2013",
-                "to": "June 2015",
-                "duration": "2 Years"
+                "from": "start date",
+                "to": "end date",
+                "duration": "total duration"
             }
         },
         {
-            "degree": "SSC Board",
-            "institute": "Shivajiraje High School | Goa Board",
-            "score": "First Class - 74%",
+            "degree": "degree name",
+            "institute": "collage or university name",
+            "branch": "field of study",
+            "score": "marks scored",
             "course_duration": {
-                "from": "June 2001",
-                "to": "June 2013",
-                "duration": "12 Years"
+                "from": "start date",
+                "to": "end date",
+                "duration": "total duration"
             }
         }
     ],
     "internships":[
         {
-            "title": "Software Development Intern",
-            "organization": "Svastek Pvt. Ltd.",
-            "location": "Margao, Goa",
+            "title": "internship 1",
+            "organization": "internship organization",
+            "location": "company location",
             "description": [
-                "completed task A",
-                "completed task B"
+                "tasks handled while on internship 1",
+                "tasks handled while on internship 2"
             ],
-            "tech_stack":[],
+            "tech_stack":["skill1", "skill2"],
             "internship_duration": {
-                "from": "June 2018",
-                "to": "",
-                "duration": "2 weeks"
+                "from": "start_date",
+                "to": "end-date",
+                "duration": "duration"
             }
         },
         {
-            "title": "Software Development Intern",
-            "organization": "Persistant System Ltd.",
-            "location": "Verna, Goa",
+            "title": "internship 2",
+            "organization": "internship organization",
+            "location": "company location",
             "description": [
-                "completed task A",
-                "completed task B"
+                "tasks handled while on internship 1",
+                "tasks handled while on internship 2"
             ],
-            "tech_stack":[],
+            "tech_stack":["skill1", "skill2"],
             "internship_duration": {
-                "from": "September 2018",
-                "to": "",
-                "duration": "2 months"
+                "from": "start_date",
+                "to": "end-date",
+                "duration": "duration"
             }
         },
         {
-            "title": "Software Development Intern",
-            "organization": "Need to think",
-            "location": "Noida, Uttarpradesh",
+            "title": "internship 1",
+            "organization": "internship organization",
+            "location": "company location",
             "description": [
-                "completed task A",
-                "completed task B"
+                "tasks handled while on internship 1",
+                "tasks handled while on internship 2"
             ],
+            "tech_stack":["skill1", "skill2"],
             "internship_duration": {
-                "from": "June 2017",
-                "to": "",
-                "duration": "2 weeks"
+                "from": "start_date",
+                "to": "end-date",
+                "duration": "duration"
             }
         }
     ],
     "work_experiences":[
         {
-            "title": "Software Developer",
-            "organization": "Open Destination Infotech Pvt. Ltd",
-            "location": "Miramar, Goa",
+            "title": "job title",
+            "organization": "company name",
+            "location": "company location",
             "description": [
-                "completed task A",
-                "completed task B"
+                "tasks handled while on work 1",
+                "tasks handled while on work 2"
             ],
-            "tech_stack":[],
+            "tech_stack":["skill1", "skill2"],
             "work_duration": {
-                "from": "July 2019",
-                "to": "May 2021",
-                "duration": "2 years"
+                "from": "start date",
+                "to": "end date",
+                "duration": "duration"
             }
         },
         {
-            "title": "DotNet Developer",
-            "organization": "Designway Agency",
-            "location": "Panaji, Goa",
+            "title": "job title",
+            "organization": "company name",
+            "location": "company location",
             "description": [
-                "completed task A",
-                "completed task B"
+                "tasks handled while on work 1",
+                "tasks handled while on work 2"
             ],
-            "tech_stack":[],
+            "tech_stack":["skill1", "skill2"],
             "work_duration": {
-                "from": "May 2021",
-                "to": "December 2021",
-                "duration": "7 months"
+                "from": "start date",
+                "to": "end date",
+                "duration": "duration"
             }
         },
         {
-            "title": "Software Development Engineer I",
-            "organization": "GYTWorkz Pvt. Ltd",
-            "location": "Hydrabad, Telengana",
+            "title": "job title",
+            "organization": "company name",
+            "location": "company location",
             "description": [
-                "completed task A",
-                "completed task B"
+                "tasks handled while on work 1",
+                "tasks handled while on work 2"
             ],
-            "tech_stack":[],
+            "tech_stack":["skill1", "skill2"],
             "work_duration": {
-                "from": "March 2022",
-                "to": "July 2022",
-                "duration": "5 Months"
-            }
-        },
-        {
-            "title": "Software Developer",
-            "organization": "All Remote Solutions Pvt. Ltd | Skuad",
-            "location": "Guruguram, Haryana",
-            "description": [
-                "completed task A",
-                "completed task B"
-            ],
-            "tech_stack":[],
-            "work_duration": {
-                "from": "July 2022",
-                "to": "",
-                "duration": "Current"
+                "from": "start date",
+                "to": "end date",
+                "duration": "duration"
             }
         }
     ],
@@ -184,33 +171,60 @@
                 "description 1",
                 "description 2"
             ],
-            "motivation": "",
-            "tech_stack":[],
+            "motivation": "what motivated you for creating this project",
+            "tech_stack":["skill1", "skill2"],
             "other_collaborators": [
-
+                "person1", "person2"
             ],
-            "my_role": [],
+            "my_role": [
+                "you were responsilbe for task 1",
+                "you were responsilbe for task 2"
+            ],
+            "is_team_project": true
+        },
+        {
+            "title": "project-title-2",
+            "project_description": [
+                "description 1",
+                "description 2"
+            ],
+            "motivation": "what motivated you for creating this project",
+            "tech_stack":["skill1", "skill2"],
+            "other_collaborators": [
+            ],
+            "my_role": [
+                "you were responsilbe for task 1",
+                "you were responsilbe for task 2"
+            ],
             "is_team_project": false
         }
     ],
     "skillset":[
         {
-            "skill_name": "golang",
+            "skill_name": "skill1",
             "description": [
-
+                "using this skill so and so was built",
+                "using this skill so and so was built"
+            ]
+        },
+        {
+            "skill_name": "skill2",
+            "description": [
+                "using this skill so and so was built",
+                "using this skill so and so was built"
             ]
         }
     ],
     "achievements":[
         {
-            "achievement_name": "whatever achievement",
+            "achievement_name": "achievement 1",
             "description": [
-
+                "what this achievement is about"
             ],
-            "when": ""
+            "when": "date when achievement was received"
         }
     ],
-    "interests":[],
-    "hobbies":[],
-    "languages":[]
+    "interests":["interest1", "interest2", "interest3"],
+    "hobbies":["hobbie1", "hobbie2", "hobbie3"],
+    "languages":["language1", "language2", "language3"]
 }
