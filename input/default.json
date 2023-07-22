@@ -195,19 +195,22 @@
     ],
     "skillset":[
         {
-            "skill-name": "golang",
-            "usecases": [
+            "skill_name": "golang",
+            "description": [
 
             ]
         }
     ],
     "achievements":[
         {
-            "achievement-name": "whatever achievement",
+            "achievement_name": "whatever achievement",
             "description": [
 
-            ]
+            ],
+            "when": ""
         }
     ],
-    "hobbies":[]
+    "interests":[],
+    "hobbies":[],
+    "languages":[]
 }

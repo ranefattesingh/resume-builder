@@ -1,8 +1,10 @@
+from builders.achievement_builder import AchievementBuilder
 from builders.education_builder import EducationBuilder
 from builders.experience_builder import ExperienceBuilder
 from builders.header_builder import HeaderBuilder
 from builders.project_builder import ProjectBuilder
-from constants.resume import EDUCATION, HEADER, INTERNSHIPS, PROJECTS, WORK_EXPERIENCES
+from builders.skillset_builder import SkillsetBuilder
+from constants.resume import ACHIEVEMENTS, EDUCATION, HEADER, INTERNSHIPS, PROJECTS, SKILLSET, WORK_EXPERIENCES
 from models.detail import Detail
 from models.header import Header
 from models.resume import Resume
@@ -88,5 +90,32 @@ class ResumeBuilder:
 
         return self
     
+    def add_skillset(self):
+        if self._input_json.get(SKILLSET) is None:
+            return self
+        
+        if type(self._input_json[SKILLSET]) is not list:
+            return self
+        
+        for skill in self._input_json[SKILLSET]:
+            skill_item = SkillsetBuilder(skill).add_skillset_name().add_skillset_description().build()
+            self._skillset.append(skill_item)
+
+        return self
+    
+    def add_achievements(self):
+        if self._input_json.get(ACHIEVEMENTS) is None:
+            return self
+        
+        if type(self._input_json[ACHIEVEMENTS]) is not list:
+            return self
+        
+        for achievement in self._input_json[ACHIEVEMENTS]:
+            achievement_item = AchievementBuilder(achievement).add_name().add_description().add_when().build()
+            self._achievements.append(achievement_item)
+
+        return self
+
+    
     def build(self):
-        return Resume(self._header, self._educations, self._internships, self._work_experiences, self._projects)
+        return Resume(self._header, self._educations, self._internships, self._work_experiences, self._projects, self._skillset, self._achievements)

@@ -1,0 +1,3 @@
+ACHIEVEMENT_NAME = 'achievement_name'
+ACHIEVEMENT_DESCRIPTION = 'description'
+ACHIEVEMENT_WHEN = 'when'
