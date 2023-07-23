@@ -27,6 +27,16 @@ class ResumeBuilder:
 
     def __init__(self, data: dict) -> None:
         self._input_json = data
+        self._header          = Header('', Detail(), '')
+        self._educations      = []
+        self._internships     = []
+        self._work_experiences= []
+        self._projects        = []
+        self._skillset        = []
+        self._achievements    = []
+        self._interests       = []
+        self._hobbies         = []
+        self._languages       = []
 
     def add_header(self):
         if self._input_json.get(HEADER) is None:

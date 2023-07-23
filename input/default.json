@@ -1,35 +1,29 @@
 {
     "header": {
-        "name": "Fattesingh Rane",
+        "name": "first-name last-name",
         "details": [
             {
-                "field_icon": "",
-                "field_name": "email",
+                "field_icon": "Email",
                 "field_value": "your-email"
             },
             {
-                "field_icon": "",
-                "field_name": "mobile",
+                "field_icon": "Mobile",
                 "field_value": "your-mobile-number"
             },
             {
-                "field_icon": "",
-                "field_name": "github",
+                "field_icon": "GitHub",
                 "field_value": "your-github-website"
             },
             {
-                "field_icon": "",
-                "field_name": "linkedin",
+                "field_icon": "LinkedIn",
                 "field_value": "your-linkedin-website"
             },
             {
-                "field_icon": "",
-                "field_name": "location",
+                "field_icon": "Location",
                 "field_value": "your-current-or-permanent-location"
             },
             {
-                "field_icon": "",
-                "field_name": "website",
+                "field_icon": "Web",
                 "field_value": "your-website"
             }
         ],
