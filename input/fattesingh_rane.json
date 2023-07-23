@@ -4,26 +4,32 @@
         "details": [
             {
                 "field_icon": "Email",
+                "field_type": "link",
                 "field_value": "ranefattesingh@gmail.com"
             },
             {
                 "field_icon": "Mobile",
+                "field_type": "text",
                 "field_value": "+91 XXXXX XXXXX"
             },
             {
                 "field_icon": "GitHub",
+                "field_type": "link",
                 "field_value": "https://github.com/ranefattesingh"
             },
             {
                 "field_icon": "LinkedIn",
+                "field_type": "link",
                 "field_value": "https://www.linkedin.com/in/ranefattesingh"
             },
             {
                 "field_icon": "Location",
+                "field_type": "text",
                 "field_value": "Goa, India"
             },
             {
                 "field_icon": "Web",
+                "field_type": "link",
                 "field_value": "https://ranefattesingh.github.io"
             }
         ],

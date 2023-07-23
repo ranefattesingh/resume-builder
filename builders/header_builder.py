@@ -1,4 +1,4 @@
-from constants.header import DETAILS, FIELD_ICON, FIELD_NAME, FIELD_VALUE, INTRODUCTION, NAME
+from constants.header import DETAILS, FIELD_ICON, FIELD_TYPE, FIELD_VALUE, INTRODUCTION, NAME
 from models.detail import Detail
 from models.header import Header
 
@@ -11,6 +11,9 @@ class HeaderBuilder:
     _input_json    : dict
 
     def __init__(self, data: dict) -> None:
+        self._name    = ''
+        self._details = []
+        self._intro   = ''
         self._input_json = data
 
     def add_name(self):
@@ -44,8 +47,8 @@ class HeaderBuilder:
         for detail_field in detail_fields:
             if detail_field == FIELD_ICON:
                 detail.field_icon = detail_json[FIELD_ICON]
-            elif detail_field == FIELD_NAME:
-                detail.field_name = detail_json[FIELD_NAME]
+            elif detail_field == FIELD_TYPE:
+                detail.field_type = detail_json[FIELD_TYPE]
             else:
                 detail.field_value = detail_json[FIELD_VALUE]
             

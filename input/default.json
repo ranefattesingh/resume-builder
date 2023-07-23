@@ -4,26 +4,32 @@
         "details": [
             {
                 "field_icon": "Email",
+                "field_type": "link",
                 "field_value": "your-email"
             },
             {
                 "field_icon": "Mobile",
+                "field_type": "text",
                 "field_value": "your-mobile-number"
             },
             {
                 "field_icon": "GitHub",
+                "field_type": "link",
                 "field_value": "your-github-website"
             },
             {
                 "field_icon": "LinkedIn",
+                "field_type": "link",
                 "field_value": "your-linkedin-website"
             },
             {
                 "field_icon": "Location",
+                "field_type": "link",
                 "field_value": "your-current-or-permanent-location"
             },
             {
                 "field_icon": "Web",
+                "field_type": "link",
                 "field_value": "your-website"
             }
         ],
