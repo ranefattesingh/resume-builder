@@ -2,8 +2,8 @@ from models.duration import Duration
 
 
 class Experience:
-    title       : str
     organization: str
+    title       : str
     location    : str
     description : list
     tech_stack  : list

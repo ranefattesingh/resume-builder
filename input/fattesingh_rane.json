@@ -72,7 +72,7 @@
             "description": [
                 "Worked with core java programs"
             ],
-            "tech_stack":["Java"],
+            "tech_stack":[],
             "internship_duration": {
                 "from": "",
                 "to": "August 2018",
@@ -87,7 +87,7 @@
                 "Learn Firebase, Javascript, jQuery and Bootstrap",
                 "Developed Ecommerce site UI using HTML, CSS, Bootsrtap and Firebase"
             ],
-            "tech_stack":["HTML", "JavaScript", "Firebase", "CSS", "Bootstrap"],
+            "tech_stack":[],
             "internship_duration": {
                 "from": "",
                 "to": "June 2018",
@@ -103,7 +103,7 @@
                 "Developed mini project to display texts on LEDS",
                 "Developed mini project for home automation using mobile app"
             ],
-            "tech_stack":["Arduino", "ESP8266", "Raspberry Pi 3"],
+            "tech_stack":[],
             "internship_duration": {
                 "from": "",
                 "to": "June 2017",
@@ -113,68 +113,78 @@
     ],
     "work_experiences":[
         {
-            "title": "job title",
-            "organization": "company name",
-            "location": "company location",
+            "organization": "All Remote Solutions Pvt. Ltd | Skuad",
+            "title": "Software Developer",
+            "location": "Gurugram, Haryana",
             "description": [
                 "tasks handled while on work 1",
                 "tasks handled while on work 2"
             ],
-            "tech_stack":["skill1", "skill2"],
+            "tech_stack":[],
             "work_duration": {
-                "from": "start date",
-                "to": "end date",
-                "duration": "duration"
+                "from": "July 2022",
+                "to": "Current",
+                "duration": "1 Year"
             }
         },
         {
-            "title": "job title",
-            "organization": "company name",
-            "location": "company location",
+            "organization": "GYTWorkz Pvt. Ltd.",
+            "title": "Software Development Engineer I",
+            "location": "Hydrabad, Telengana",
             "description": [
                 "tasks handled while on work 1",
                 "tasks handled while on work 2"
             ],
-            "tech_stack":["skill1", "skill2"],
+            "tech_stack":[],
             "work_duration": {
-                "from": "start date",
-                "to": "end date",
-                "duration": "duration"
+                "from": "April 2022",
+                "to": "July 2022",
+                "duration": "3 Months"
             }
         },
         {
-            "title": "job title",
-            "organization": "company name",
-            "location": "company location",
+            "organization": "Designway Agency",
+            "title": "DotNet Developer",
+            "location": "Panaji, Goa",
             "description": [
                 "tasks handled while on work 1",
                 "tasks handled while on work 2"
             ],
-            "tech_stack":["skill1", "skill2"],
+            "tech_stack":[],
             "work_duration": {
-                "from": "start date",
-                "to": "end date",
-                "duration": "duration"
+                "from": "May 2021",
+                "to": "December 2021",
+                "duration": "7 Months"
+            }
+        },
+        {
+            "organization": "Open Destinations Infotech Pvt. Ltd",
+            "title": "Software Developer",
+            "location": "Miramar, Goa",
+            "description": [
+                "tasks handled while on work 1",
+                "tasks handled while on work 2"
+            ],
+            "tech_stack":[],
+            "work_duration": {
+                "from": "July 2019",
+                "to": "May 2021",
+                "duration": "1 year 10 months"
             }
         }
     ],
     "projects":[
         {
-            "title": "project-title-1",
+            "title": "Resume Builder Cli",
             "project_description": [
                 "description 1",
                 "description 2"
             ],
-            "motivation": "what motivated you for creating this project",
-            "tech_stack":["skill1", "skill2"],
-            "other_collaborators": [
-                "person1", "person2"
-            ],
-            "my_role": [
-                "you were responsilbe for task 1",
-                "you were responsilbe for task 2"
-            ],
-            "is_team_project": true
+            "motivation": "Motivation to do this project was to avoid updating resume manually which costs alot of time ensuring styles, template etc. This project aims to minimize the amount of time needed to setup new resume or update existing resume.",
+            "tech_stack":[],
+            "other_collaborators": [],
+            "my_role": [],
+            "is_team_project": false
         },
         {
             "title": "project-title-2",
@@ -184,8 +194,7 @@
             ],
             "motivation": "what motivated you for creating this project",
             "tech_stack":["skill1", "skill2"],
-            "other_collaborators": [
-            ],
+            "other_collaborators": [ "shubham" ],
             "my_role": [
                 "you were responsilbe for task 1",
                 "you were responsilbe for task 2"
