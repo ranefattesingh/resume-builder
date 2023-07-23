@@ -22,11 +22,7 @@ def create_with_default_template(resume: Resume):
     detail_table = header_table.cell(0, 1).tables[0]
     for rowIndex in range(0, len(detail_table.rows)):
         key = detail_table.rows[rowIndex].cells[1].text
-        print(key)
-        detail_items = list(filter(lambda detail: detail.field_icon == key, resume.header.details))
-        value = ''
-        if len(detail_items) == 1:
-            value = detail_items[0].field_value
+        value = list(filter(lambda detail: detail.field_icon == key, resume.header.details))[0].field_value
         detail_table.rows[rowIndex].cells[1].text = value
 
     contentTable = document.tables[1]
