@@ -31,4 +31,10 @@ jobs:
       run: |
         mkdir out
         python main.py
+    - name: Archive run artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: output
+          path: |
+            out
 
