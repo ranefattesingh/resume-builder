@@ -123,10 +123,24 @@
             "title": "Software Developer",
             "location": "Gurugram, Haryana",
             "description": [
-                "tasks handled while on work 1",
-                "tasks handled while on work 2"
+                "Worked as a contract employee with GojekTech",
+                "Worked in project mercury of campaign manager platform in journeys team",
+                "Responsible for creating and managing journey service api",
+                "Developed journey service api, integrated service with other microservices such as segmentation service and timer service",
+                "Created webhooks for communicating with segmentation service",
+                "Used Kafka to receive timer service payloads",
+                "Worked on Data pipelines developed using Google Dataflow with Apache Beam as streaming engine",
+                "Enabled monitering and alerting using Telegraf, Cortex, Prometheus, Grafana and Siren in journey-service and data pipelines",
+                "Worked on terraform for google cloud infra management",
+                "Worked on journey-pipeline-runner project which was written in Go using Cobra Cli library to deploy dataflow jobs",
+                "Connected journey service with google big query for log migration",
+                "Used Kubernetes for service deployment",
+                "Worked with Helm charts to add new features to helm template to support NodePort",
+                "Setup GitLab CI/CD pipelines for service deployment",
+                "Worked with Test Driven Development with code coverage of 85%",
+                "Worked on migrating production data using postgres"
             ],
-            "tech_stack":[],
+            "tech_stack":["Go", "Apache Beam", "DataFlow", "Java", "Postgres", "BigQuery", "Docker", "Kubernetes", "kafka", "GCP", "Terraform", "GitLab", "Telegraf", "Grafana", "Prometheus"],
             "work_duration": {
                 "from": "July 2022",
                 "to": "Current",
@@ -138,10 +152,14 @@
             "title": "Software Development Engineer I",
             "location": "Hydrabad, Telengana",
             "description": [
-                "tasks handled while on work 1",
-                "tasks handled while on work 2"
+                "Worked on a ecommerce microservices which was responsible for creating and managing sales",
+                "Added new features to service using Go Gin with MySQL as database",
+                "Worked on UI project for creating chat bots using Angular",
+                "Written new components to support chatbot to be opened at different locations on screen",
+                "Added new feature to support chatbot icon and color customization",
+                "Dockerized Microservice"
             ],
-            "tech_stack":[],
+            "tech_stack":["Go", "MySQL", "Docker", "Angular"],
             "work_duration": {
                 "from": "April 2022",
                 "to": "July 2022",
@@ -153,10 +171,12 @@
             "title": "DotNet Developer",
             "location": "Panaji, Goa",
             "description": [
-                "tasks handled while on work 1",
-                "tasks handled while on work 2"
+                "Worked as a Contractor with Business Insurance Ltd",
+                "Worked on Quote engine worker job and API projects which provides users with insurance quotes that matched their insurance criteria",
+                "Developed OpenComparisionApi using DotNet Core 3.1 which helped BISL to onboard new insurance partners",
+                "Developed and publised a new package which simplified traversing into XML tree structure"
             ],
-            "tech_stack":[],
+            "tech_stack":["DotNet Web API", "DotNet Core 3.1", "MSSQL", "PostgreSQL"],
             "work_duration": {
                 "from": "May 2021",
                 "to": "December 2021",
@@ -168,10 +188,15 @@
             "title": "Software Developer",
             "location": "Miramar, Goa",
             "description": [
-                "tasks handled while on work 1",
-                "tasks handled while on work 2"
+                "Worked on TravelStudio V2 project",
+                "As fresher initially I worked on production and staging support tickets",
+                "Worked on feature development of Train Carriage features",
+                "Worked on feature enhancement of Auto Seat Assigment feature",
+                "Worked on feature development of Rail Operation Multiple Departure",
+                "Developed a Rail Carraige UI and backed using AngularJs and Dotnet",
+                "Worked with Research and Development team to develop new product which enabled tour operators to manage bookings across countries"
             ],
-            "tech_stack":[],
+            "tech_stack":["Dotnet MVC", "REST API", "MSSQL", "JIRA", "AngularJs"],
             "work_duration": {
                 "from": "July 2019",
                 "to": "May 2021",
@@ -183,11 +208,13 @@
         {
             "title": "Resume Builder Cli",
             "project_description": [
-                "description 1",
-                "description 2"
+                "Simple project to run in gitlab workflow and generate resume as part of artifacts",
+                "input to the project is supplied through a json file which has all required details of candidate",
+                "when a new changes are merged in main branch workflow begins and outputs resume as artifacts",
+                "supports adding new json files as input and also user can pass a word template to customize resume as per user convinience"
             ],
             "motivation": "Motivation to do this project was to avoid updating resume manually which costs alot of time ensuring styles, template etc. This project aims to minimize the amount of time needed to setup new resume or update existing resume.",
-            "tech_stack":[],
+            "tech_stack":["Python 3.10"],
             "other_collaborators": [],
             "my_role": [],
             "is_team_project": false
@@ -198,13 +225,38 @@
                 "description 1",
                 "description 2"
             ],
-            "motivation": "Motivation to do this project was to avoid updating resume manually which costs alot of time ensuring styles, template etc. This project aims to minimize the amount of time needed to setup new resume or update existing resume.",
-            "tech_stack":["GO", "PSQL"],
+            "motivation": "Project developed in order to support small shopkeer to list their shop items online with minimal cost helping them increasing sales and revenue",
+            "tech_stack":["Go", "PSQL", "NextJs"],
             "other_collaborators": [
-                "C1",
-                "C2"
+                "Fattesingh Rane",
+                "Shubham Phadte"
             ],
-            "my_role": ["I did a", "i did b"],
+            "my_role": [
+                "I was responsible for development and maintainance of Web API",
+                "API was developed to using Go with create, retrive, update features"
+            ],
+            "is_team_project": true
+        },
+        {
+            "title": "Online Product Review Classification",
+            "project_description": [
+                "Project consist of total four algorithms namely Porter Stemmer, Naive Baysian, K Nearest and Feature Extraction",
+                "We used porter stemmer to remove steming words from data set",
+                "Used naive baysian and k nearest neighbor algorithm to identify whether product query is good or bad",
+                "Come up with feature extraction algorithm to translate product review and compute a new system generated rating for product",
+                "Published Feature extraction technique in IEE research paper"
+            ],
+            "motivation": "Motivation was to understand machine learning and data mining and come up with a new way to provide rating to online product helping users to compare product",
+            "tech_stack":["Java"],
+            "other_collaborators": [
+                "Fattesingh Rane",
+                "Akhil Naik"
+            ],
+            "my_role": [
+                "Implemented Feature Extraction Algorithm",
+                "Partially implemented of Porter Stemmer",
+                "Implemented Naive Baysian Algorithm"
+            ],
             "is_team_project": true
         }
     ],
@@ -212,26 +264,177 @@
         {
             "skill_name": "Golang",
             "description": [
-                "using this Golang so and so was built",
-                "using this Golang so and so was built"
+                "Developed Restaurant Listing API",
+                "Developed new features in ecommerce microservices",
+                "Developed journey service api",
+                "Worked on journey pipeline runner"
             ]
         },
         {
             "skill_name": "Java",
             "description": [
+                "Developed online product review classifier",
+                "Worked on apache bean streaming engine for streaming job development",
+                "Worked on batch job development"
+            ]
+        },
+        {
+            "skill_name": "Python",
+            "description": [
+                "Developed a portfolio backed using Django",
+                "Developed resume builder cli application to build resume"
+            ]
+        },
+        {
+            "skill_name": "C#, Dotnet, DotNet Core",
+            "description": [
+                "Used Dotnet for TravelStudio V2 project and Quote Engine project",
+                "Developed OpenComparisonApi using DotNet Core 3.1"
+            ]
+        },
+        {
+            "skill_name": "AngularJs",
+            "description": [
+                "Used AngularJs for TravelStudio V2 project"
+            ]
+        },
+        {
+            "skill_name": "Angular",
+            "description": [
+                "Used Angular for chatbot feature development"
+            ]
+        },
+        {
+            "skill_name": "SQL Database",
+            "description": [
+                "Used Microsoft SQL Server (MSSQL) in TravelStudio V2, QuoteEngine and Open Comparison API",
+                "Used MySQL in Ecommerce microservices",
+                "Used PostgreSQL in journey servuce api"
+            ]
+        },
+        {
+            "skill_name": "NoSQL Database",
+            "description": [
+                "Used BigTable in journey streaming pipeline"
+            ]
+        },
+        {
+            "skill_name": "Redis",
+            "description": [
+                "Used Redis in journey service api",
+                "Used Redis in journey streaming pipeline",
+                "Used Redis in journey batch pipeline"
+            ]
+        },
+        {
+            "skill_name": "Docker",
+            "description": [
+                "Used for resolving local dependencis",
+                "Used docker-compose for integration testing of services",
+                "Updated docker files used to deploy telegraf"
+            ]
+        },
+        {
+            "skill_name": "Kubernetes",
+            "description": [
+                "Used for service deployment",
+                "Monioring service logs"
+            ]
+        },
+        {
+            "skill_name": "Helm",
+            "description": [
+                "Added features to helm chart to support NodePort service",
+                "Added unit tests to test helm chart",
+                "Added feature to support deploy a side car container as a service when side car is needed as a service"
+            ]
+        },
+        {
+            "skill_name": "Google Cloud Platform (GCP)",
+            "description": [
+                "Used for API deployment using ElasticBeanStalk",
+                "Used for DNS and CNAME generation",
+                "Used for SSL generation",
+                "Used for MSSQL database management",
+                "Used Lambda service for automating email sending"
+            ]
+        },
+        {
+            "skill_name": "Amazon Web Services (AWS)",
+            "description": [
+                "Used for deployment of services through Google Kubernetes Services (GKS)",
+                "Used for deployment of Dataflow job",
+                "Hosting cloud sql database",
+                "Used for BigData management using BigQuery",
+                "Used fast data retrival through BigTable",
+                "Used for uploading files through service on GCS Bucket"
+            ]
+        },
+        {
+            "skill_name": "Terraform",
+            "description": [
+                "Used for google cloud infra management"
             ]
         }
     ],
     "achievements":[
         {
-            "achievement_name": "achievement 1",
+            "achievement_name": "Received reginization from Author Clement Jean for reviwing codes book",
             "description": [
-                "what this achievement is about"
+                "Reveiwed book gRPC Go for Profesionals"
             ],
-            "when": "June 2019"
+            "when": "July 2023"
+        },
+        {
+            "achievement_name": "Achieved a 5 star gold badge on HackerRank",
+            "description": [
+                "Writen medium to hard level codes on hacker rank using C++"
+            ],
+            "when": "March 2020"
+        },
+        {
+            "achievement_name": "Publised reasearch paper in IEEE",
+            "description": [
+                "Publised a research paper in IEEE on Feature Extraction technique used to generate new rating for product"
+            ],
+            "when": "September 2019"
+        },
+        {
+            "achievement_name": "Runner up at code down",
+            "description": [
+                "Won a second place in Code Down coding event conducted by collage"
+            ],
+            "when": "April 2018"
+        },
+        {
+            "achievement_name": "Dessert and Beverages",
+            "description": [
+                "Secured third place in event conducted in Higher Secondary for making custord using grapes and apple"
+            ],
+            "when": "October 2013"
+        },
+        {
+            "achievement_name": "Gamers Zone",
+            "description": [
+                "Secured first place in Counter Strike PC gaming competition organized by Saraswat BCA"
+            ],
+            "when": "April 2013"
         }
     ],
-    "interests":["interest1", "interest2", "interest3"],
-    "hobbies":["hobbie1", "hobbie2", "hobbie3"],
-    "languages":["language1", "language2", "language3"]
+    "interests":[
+        "Backend Development", 
+        "Machine Learning", 
+        "High Scalable System Design"
+    ],
+    "hobbies":[
+        "Drawing", 
+        "Singing", 
+        "Gaming"
+    ],
+    "languages":[
+        "English", 
+        "Hindi", 
+        "Marathi",
+        "Konkani"
+    ]
 }
