@@ -79,7 +79,6 @@ def add_academic_profile(educations, academic_profile_table):
 
 def add_experience(experiences, experience_table):
     for row in experience_table.rows:
-        print(row.cells[0].paragraphs[0].style)
         remove_row(experience_table, row)
 
     for experience in experiences:
