@@ -4,6 +4,7 @@ from builders.experience_builder import ExperienceBuilder
 from builders.header_builder import HeaderBuilder
 from builders.project_builder import ProjectBuilder
 from builders.skillset_builder import SkillsetBuilder
+from constants.experience import WORK_DURAION, INTERNSHIP_DURAION
 from constants.resume import ACHIEVEMENTS, EDUCATION, HEADER, HOBBIES, INTERESTS, INTERNSHIPS, LANGUAGES, PROJECTS, SKILLSET, WORK_EXPERIENCES
 from models.detail import Detail
 from models.header import Header
@@ -58,7 +59,7 @@ class ResumeBuilder:
             return self
 
         for internship in internship_array:
-            internshipBuilder = ExperienceBuilder(internship).add_title().add_organization().add_description().add_experience_duration(INTERNSHIPS).add_location().add_tech_stack()
+            internshipBuilder = ExperienceBuilder(internship).add_title().add_organization().add_description().add_experience_duration(INTERNSHIP_DURAION).add_location().add_tech_stack()
             self._internships.append(internshipBuilder.build())
 
         return self
@@ -72,7 +73,7 @@ class ResumeBuilder:
             return self
 
         for work_experience in work_experience_array:
-            workExperienceBuilder = ExperienceBuilder(work_experience).add_title().add_organization().add_description().add_experience_duration(WORK_EXPERIENCES).add_location().add_tech_stack()
+            workExperienceBuilder = ExperienceBuilder(work_experience).add_title().add_organization().add_description().add_experience_duration(WORK_DURAION).add_location().add_tech_stack()
             self._work_experiences.append(workExperienceBuilder.build())
 
         return self

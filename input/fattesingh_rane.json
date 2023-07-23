@@ -1,0 +1,233 @@
+{
+    "header": {
+        "name": "Fattesingh Rane",
+        "details": [
+            {
+                "field_icon": "Email",
+                "field_value": "ranefattesingh@gmail.com"
+            },
+            {
+                "field_icon": "Mobile",
+                "field_value": "+91 XXXXX XXXXX"
+            },
+            {
+                "field_icon": "GitHub",
+                "field_value": "https://github.com/ranefattesingh"
+            },
+            {
+                "field_icon": "LinkedIn",
+                "field_value": "https://www.linkedin.com/in/ranefattesingh"
+            },
+            {
+                "field_icon": "Location",
+                "field_value": "Goa, India"
+            },
+            {
+                "field_icon": "Web",
+                "field_value": "https://ranefattesingh.github.io"
+            }
+        ],
+        "intro": "I am a software developer with about 4 years of experience in various tech stack, I have primarly worked as a backend development with Go, Java, Python, Node, Dotnet as my technologies. As experienced developer I would like to work with an organization which helps me gaining more knowlegde helping my and organizational growth"
+    },
+    "education":[
+        {
+            "institute": "Agnel Institute of Technology and Design, Assagao, Goa",
+            "degree": "Bachelor of Engineering",
+            "branch": "Computer Engineering",
+            "score": "First Class (61%)",
+            "course_duration": {
+                "from": "June 2015",
+                "to": "June 2019",
+                "duration": "4 Years"
+            }
+        },
+        {
+            "institute": "Purushottam Walawalkar Higher Secondary School",
+            "degree": "Higher Secondary School Certificate",
+            "branch": "Science",
+            "score": "First Class (61%)",
+            "course_duration": {
+                "from": "",
+                "to": "June 2015",
+                "duration": ""
+            }
+        },
+        {
+            "institute": "Shivajiraje High School",
+            "degree": "Secondary School Certificate",
+            "branch": "",
+            "score": "First Class (74%)",
+            "course_duration": {
+                "from": "",
+                "to": "June 2013",
+                "duration": ""
+            }
+        }
+    ],
+    "internships":[
+        {
+            "organization": "Persistant System Ltd.",
+            "title": "Core Java",
+            "location": "Verna, Goa",
+            "description": [
+                "Worked with core java programs"
+            ],
+            "tech_stack":[],
+            "internship_duration": {
+                "from": "",
+                "to": "August 2018",
+                "duration": "2 Weeks"
+            }
+        },
+        {
+            "organization": "Svastek",
+            "title": "Introduction to Firebase and Web Development",
+            "location": "Margao, Goa",
+            "description": [
+                "Learn Firebase, Javascript, jQuery and Bootstrap",
+                "Developed Ecommerce site UI using HTML, CSS, Bootsrtap and Firebase"
+            ],
+            "tech_stack":[],
+            "internship_duration": {
+                "from": "",
+                "to": "June 2018",
+                "duration": "2 Weeks"
+            }
+        },
+        {
+            "organization": "Innovians Technology",
+            "title": "IoT and Automation",
+            "location": "Noida",
+            "description": [
+                "Learn about IoT, ESP8266, Raspberry Pi 3",
+                "Developed mini project to display texts on LEDS",
+                "Developed mini project for home automation using mobile app"
+            ],
+            "tech_stack":[],
+            "internship_duration": {
+                "from": "",
+                "to": "June 2017",
+                "duration": "2 Weeks"
+            }
+        }
+    ],
+    "work_experiences":[
+        {
+            "organization": "All Remote Solutions Pvt. Ltd | Skuad",
+            "title": "Software Developer",
+            "location": "Gurugram, Haryana",
+            "description": [
+                "tasks handled while on work 1",
+                "tasks handled while on work 2"
+            ],
+            "tech_stack":[],
+            "work_duration": {
+                "from": "July 2022",
+                "to": "Current",
+                "duration": "1 Year"
+            }
+        },
+        {
+            "organization": "GYTWorkz Pvt. Ltd.",
+            "title": "Software Development Engineer I",
+            "location": "Hydrabad, Telengana",
+            "description": [
+                "tasks handled while on work 1",
+                "tasks handled while on work 2"
+            ],
+            "tech_stack":[],
+            "work_duration": {
+                "from": "April 2022",
+                "to": "July 2022",
+                "duration": "3 Months"
+            }
+        },
+        {
+            "organization": "Designway Agency",
+            "title": "DotNet Developer",
+            "location": "Panaji, Goa",
+            "description": [
+                "tasks handled while on work 1",
+                "tasks handled while on work 2"
+            ],
+            "tech_stack":[],
+            "work_duration": {
+                "from": "May 2021",
+                "to": "December 2021",
+                "duration": "7 Months"
+            }
+        },
+        {
+            "organization": "Open Destinations Infotech Pvt. Ltd",
+            "title": "Software Developer",
+            "location": "Miramar, Goa",
+            "description": [
+                "tasks handled while on work 1",
+                "tasks handled while on work 2"
+            ],
+            "tech_stack":[],
+            "work_duration": {
+                "from": "July 2019",
+                "to": "May 2021",
+                "duration": "1 year 10 months"
+            }
+        }
+    ],
+    "projects":[
+        {
+            "title": "Resume Builder Cli",
+            "project_description": [
+                "description 1",
+                "description 2"
+            ],
+            "motivation": "Motivation to do this project was to avoid updating resume manually which costs alot of time ensuring styles, template etc. This project aims to minimize the amount of time needed to setup new resume or update existing resume.",
+            "tech_stack":[],
+            "other_collaborators": [],
+            "my_role": [],
+            "is_team_project": false
+        },
+        {
+            "title": "project-title-2",
+            "project_description": [
+                "description 1",
+                "description 2"
+            ],
+            "motivation": "what motivated you for creating this project",
+            "tech_stack":["skill1", "skill2"],
+            "other_collaborators": [ "shubham" ],
+            "my_role": [
+                "you were responsilbe for task 1",
+                "you were responsilbe for task 2"
+            ],
+            "is_team_project": false
+        }
+    ],
+    "skillset":[
+        {
+            "skill_name": "skill1",
+            "description": [
+                "using this skill so and so was built",
+                "using this skill so and so was built"
+            ]
+        },
+        {
+            "skill_name": "skill2",
+            "description": [
+                "using this skill so and so was built",
+                "using this skill so and so was built"
+            ]
+        }
+    ],
+    "achievements":[
+        {
+            "achievement_name": "achievement 1",
+            "description": [
+                "what this achievement is about"
+            ],
+            "when": "date when achievement was received"
+        }
+    ],
+    "interests":["interest1", "interest2", "interest3"],
+    "hobbies":["hobbie1", "hobbie2", "hobbie3"],
+    "languages":["language1", "language2", "language3"]
+}

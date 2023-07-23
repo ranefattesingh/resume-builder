@@ -2,8 +2,8 @@ from models.duration import Duration
 
 
 class Education:
-    degree      : str
     institute   : str
+    degree      : str
     branch      : str
     score       : str
     duration    : Duration
