@@ -8,7 +8,7 @@ from models.resume import Resume
 def create_with_default_template(resume: Resume):
     document = Document(os.path.join(TEMPLATE_DIR_NAME, DEFAULT_TEMPLATE_FILE_NAME))
 
-    document.paragraphs[0].runs[0].text = resume.header.intro
+    document.paragraphs[0].runs[0].text = '     ' + resume.header.intro
 
     # header table
     header_container_table = document.tables[0]
@@ -20,10 +20,15 @@ def create_with_default_template(resume: Resume):
 
     # detail table
     detail_table = header_table.cell(0, 1).tables[0]
-    for rowIndex in range(0, len(detail_table.rows)):
-        key = detail_table.rows[rowIndex].cells[1].text
-        value = list(filter(lambda detail: detail.field_icon == key, resume.header.details))[0].field_value
-        detail_table.rows[rowIndex].cells[1].text = value
+    for row in detail_table.rows:
+        key = row.cells[1].text
+        detail_rows = list(filter(lambda detail: detail.field_icon == key, resume.header.details))
+        if len(detail_rows) == 0:
+            remove_row(detail_table, row)
+            
+            continue
+        
+        row.cells[1].text = detail_rows[0].field_value
 
     contentTable = document.tables[1]
 
@@ -31,6 +36,13 @@ def create_with_default_template(resume: Resume):
     add_academic_profile(resume.educations, contentTable.cell(0, 1).tables[0])
     add_experience(resume.internships, contentTable.cell(2, 1).tables[0])
     add_experience(resume.work_experiences, contentTable.cell(4, 1).tables[0])
+    add_projects(resume.projects, contentTable.cell(6, 1).tables[0])
+    add_skills(resume.skillset, contentTable.cell(8, 1).tables[0])
+    add_achievements(resume.achievements, contentTable.cell(10, 1).tables[0])
+
+    add_array_field(resume.interests, contentTable.cell(12, 1).tables[0])
+    add_array_field(resume.hobbies, contentTable.cell(14, 1).tables[0])
+    add_array_field(resume.languages, contentTable.cell(16, 1).tables[0])
     
 
     
@@ -40,7 +52,9 @@ def create_with_default_template(resume: Resume):
 def add_academic_profile(educations, academic_profile_table):
     for row in academic_profile_table.rows:
         remove_row(academic_profile_table, row)
-    
+
+    if len(educations) == 0:
+        return
     
     for education in educations:
         academic_profile_table.add_row()
@@ -81,6 +95,9 @@ def add_experience(experiences, experience_table):
     for row in experience_table.rows:
         remove_row(experience_table, row)
 
+    if len(experiences) == 0:
+        return
+
     for experience in experiences:
         experience_table.add_row()
         experience_table.rows[len(experience_table.rows)-1].cells[0].text = experience.organization
@@ -95,7 +112,6 @@ def add_experience(experiences, experience_table):
             for description in experience.description:
                 experience_table.add_row()
                 experience_table.rows[len(experience_table.rows)-1].cells[0].text = ('   •   ' + description)
-                # delete_paragraph(experience_table.rows[len(experience_table.rows)-1].cells[0].paragraphs[0])
                 experience_table.rows[len(experience_table.rows)-1].cells[0].paragraphs[0].runs[0].bold = True
                 experience_table.rows[len(experience_table.rows)-1].cells[0].paragraphs[0].runs[0].font.size  = Pt(9)
 
@@ -119,6 +135,122 @@ def add_experience(experiences, experience_table):
         experience_table.add_row()
 
     remove_row(experience_table, experience_table.rows[len(experience_table.rows)-1])
+
+def add_projects(projects, projects_table):
+    for row in projects_table.rows:
+        remove_row(projects_table, row)
+    
+    if len(projects) == 0:
+        return
+
+    for project in projects:
+        projects_table.add_row()
+        projects_table.rows[len(projects_table.rows)-1].cells[0].text = project.title
+        projects_table.rows[len(projects_table.rows)-1].cells[0].paragraphs[0].runs[0].bold = True
+        projects_table.rows[len(projects_table.rows)-1].cells[0].paragraphs[0].runs[0].underline  = True
+        projects_table.rows[len(projects_table.rows)-1].cells[0].paragraphs[0].runs[0].font.size  = Pt(11)
+
+        if project.motivation != '':
+            projects_table.add_row()
+            projects_table.rows[len(projects_table.rows)-1].cells[0].text = project.motivation
+
+        if len(project.description) > 0:
+            for my_role in project.description:
+                projects_table.add_row()
+                projects_table.rows[len(projects_table.rows)-1].cells[0].text = ('   •   ' + my_role)
+                projects_table.rows[len(projects_table.rows)-1].cells[0].paragraphs[0].runs[0].bold = True
+                projects_table.rows[len(projects_table.rows)-1].cells[0].paragraphs[0].runs[0].font.size  = Pt(9)
+
+        if len(project.tech_stack) > 0:
+            projects_table.add_row()
+            projects_table.rows[len(projects_table.rows)-1].cells[0].text = ', '.join(project.tech_stack)
+
+        if len(project.other_collaborators) > 0:
+            projects_table.add_row()
+            collaborators = ', '.join(project.other_collaborators)
+            projects_table.rows[len(projects_table.rows)-1].cells[0].text = 'Collaborators: ' + collaborators 
+
+        if len(project.description) > 0:
+            projects_table.add_row()
+            projects_table.rows[len(projects_table.rows)-1].cells[0].text = "My role: "
+            for my_role in project.my_role:
+                projects_table.add_row()
+                projects_table.rows[len(projects_table.rows)-1].cells[0].text = ('   •   ' + my_role)
+                projects_table.rows[len(projects_table.rows)-1].cells[0].paragraphs[0].runs[0].bold = True
+                projects_table.rows[len(projects_table.rows)-1].cells[0].paragraphs[0].runs[0].font.size  = Pt(9)
+        
+        projects_table.add_row()
+
+    remove_row(projects_table, projects_table.rows[len(projects_table.rows)-1])
+
+def add_skills(skills, skills_table):
+    for row in skills_table.rows:
+        remove_row(skills_table, row)
+    
+    if len(skills) == 0:
+        return
+
+    for skill in skills:
+        skills_table.add_row()
+        skills_table.rows[len(skills_table.rows)-1].cells[0].text = skill.skill_name
+        skills_table.rows[len(skills_table.rows)-1].cells[0].paragraphs[0].runs[0].bold = True
+        skills_table.rows[len(skills_table.rows)-1].cells[0].paragraphs[0].runs[0].underline  = True
+        skills_table.rows[len(skills_table.rows)-1].cells[0].paragraphs[0].runs[0].font.size  = Pt(11)
+
+        if len(skill.description) > 0:
+            for description in skill.description:
+                skills_table.add_row()
+                skills_table.rows[len(skills_table.rows)-1].cells[0].text = ('   •   ' + description)
+                skills_table.rows[len(skills_table.rows)-1].cells[0].paragraphs[0].runs[0].bold = True
+                skills_table.rows[len(skills_table.rows)-1].cells[0].paragraphs[0].runs[0].font.size  = Pt(9)
+        
+        skills_table.add_row()
+
+    remove_row(skills_table, skills_table.rows[len(skills_table.rows)-1])
+
+def add_achievements(achievements, achievement_table):
+    for row in achievement_table.rows:
+        remove_row(achievement_table, row)
+    
+    if len(achievements) == 0:
+        return
+
+    for achievement in achievements:
+        achievement_table.add_row()
+        achievement_table.rows[len(achievement_table.rows)-1].cells[0].text = achievement.name
+        achievement_table.rows[len(achievement_table.rows)-1].cells[0].paragraphs[0].runs[0].bold = True
+        achievement_table.rows[len(achievement_table.rows)-1].cells[0].paragraphs[0].runs[0].underline  = True
+        achievement_table.rows[len(achievement_table.rows)-1].cells[0].paragraphs[0].runs[0].font.size  = Pt(11)
+
+        if len(achievement.description) > 0:
+            for description in achievement.description:
+                achievement_table.add_row()
+                achievement_table.rows[len(achievement_table.rows)-1].cells[0].text = ('   •   ' + description)
+                achievement_table.rows[len(achievement_table.rows)-1].cells[0].paragraphs[0].runs[0].bold = True
+                achievement_table.rows[len(achievement_table.rows)-1].cells[0].paragraphs[0].runs[0].font.size  = Pt(9)
+        
+        if achievement.when != '':
+            achievement_table.add_row()
+            achievement_table.rows[len(achievement_table.rows)-1].cells[0].text = achievement.when
+            achievement_table.rows[len(achievement_table.rows)-1].cells[0].paragraphs[0].runs[0].bold = True
+            achievement_table.rows[len(achievement_table.rows)-1].cells[0].paragraphs[0].runs[0].font.color.rgb = RGBColor(0x80, 0x80, 0x80)
+        
+        achievement_table.add_row()
+
+    remove_row(achievement_table, achievement_table.rows[len(achievement_table.rows)-1])
+
+def add_array_field(array_field, table):
+    for row in table.rows:
+        remove_row(table, row)
+        
+    if len(array_field) == 0:
+        return
+
+    for field_value in array_field:
+        table.add_row()
+        table.rows[len(table.rows)-1].cells[0].text = ('   •   ' + field_value)
+        table.rows[len(table.rows)-1].cells[0].paragraphs[0].runs[0].bold = True
+        table.rows[len(table.rows)-1].cells[0].paragraphs[0].runs[0].font.size  = Pt(10)
 
 
 def remove_row(table, row):
