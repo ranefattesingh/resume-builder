@@ -1,1 +1,4 @@
-INPUT_DIR_NAME = "input"
+INPUT_DIR_NAME = 'input'
+TEMPLATE_DIR_NAME = 'templates'
+DEFAULT_TEMPLATE_FILE_NAME = 'default.docx'
+TEMPLATE_OUTPUT_DIR_NAME = 'out'
