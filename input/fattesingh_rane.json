@@ -187,34 +187,32 @@
             "is_team_project": false
         },
         {
-            "title": "project-title-2",
+            "title": "Restaurant Listing API",
             "project_description": [
                 "description 1",
                 "description 2"
             ],
-            "motivation": "what motivated you for creating this project",
-            "tech_stack":["skill1", "skill2"],
-            "other_collaborators": [ "shubham" ],
-            "my_role": [
-                "you were responsilbe for task 1",
-                "you were responsilbe for task 2"
+            "motivation": "Motivation to do this project was to avoid updating resume manually which costs alot of time ensuring styles, template etc. This project aims to minimize the amount of time needed to setup new resume or update existing resume.",
+            "tech_stack":["GO", "PSQL"],
+            "other_collaborators": [
+                "C1",
+                "C2"
             ],
-            "is_team_project": false
+            "my_role": ["I did a", "i did b"],
+            "is_team_project": true
         }
     ],
     "skillset":[
         {
-            "skill_name": "skill1",
+            "skill_name": "Golang",
             "description": [
-                "using this skill so and so was built",
-                "using this skill so and so was built"
+                "using this Golang so and so was built",
+                "using this Golang so and so was built"
             ]
         },
         {
-            "skill_name": "skill2",
+            "skill_name": "Java",
             "description": [
-                "using this skill so and so was built",
-                "using this skill so and so was built"
             ]
         }
     ],
@@ -224,7 +222,7 @@
             "description": [
                 "what this achievement is about"
             ],
-            "when": "date when achievement was received"
+            "when": "June 2019"
         }
     ],
     "interests":["interest1", "interest2", "interest3"],

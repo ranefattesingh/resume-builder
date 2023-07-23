@@ -4,7 +4,7 @@ class Project:
     motivation          : str
     tech_stack          : list
     other_collaborators : list
-    my_role             : str
+    my_role             : list
     is_team_project     : bool
 
     def __init__(self, title:str, descriptipn: list, motivation: str, tech_stack: list, other_collaborators: list, my_role: str, is_team_project: bool) -> None:
