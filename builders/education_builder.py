@@ -1,10 +1,7 @@
 from constants.duration import DURATION, FROM, TO
 from constants.education import COURSE_DURATION, DEGREE, INSTITUTE, SCORE, BRANCH
-from constants.header import FIELD_ICON, FIELD_NAME, FIELD_VALUE, INTRODUCTION, NAME
-from models.detail import Detail
 from models.duration import Duration
 from models.education import Education
-from models.header import Header
 
 
 class EducationBuilder:

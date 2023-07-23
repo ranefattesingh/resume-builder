@@ -2,6 +2,7 @@ import os
 from docx.shared import Pt, RGBColor
 from constants.globals import DEFAULT_TEMPLATE_FILE_NAME, TEMPLATE_DIR_NAME, TEMPLATE_OUTPUT_DIR_NAME
 from docx import Document
+import docx
 
 from models.resume import Resume
 
@@ -28,7 +29,8 @@ def create_with_default_template(resume: Resume):
             
             continue
         
-        row.cells[1].text = detail_rows[0].field_value
+        row.cells[1].text = ''
+        add_hyperlink(row.cells[1].paragraphs[0], detail_rows[0].field_value, detail_rows[0].field_value)
 
     contentTable = document.tables[1]
 
@@ -262,3 +264,37 @@ def delete_paragraph(paragraph):
     p = paragraph._element
     p.getparent().remove(p)
     p._p = p._element = None
+
+def add_hyperlink(paragraph, url, text):
+    """
+    A function that places a hyperlink within a paragraph object.
+
+    :param paragraph: The paragraph we are adding the hyperlink to.
+    :param url: A string containing the required url
+    :param text: The text displayed for the url
+    :return: The hyperlink object
+    """
+
+    # This gets access to the document.xml.rels file and gets a new relation id value
+    part = paragraph.part
+    r_id = part.relate_to(url, docx.opc.constants.RELATIONSHIP_TYPE.HYPERLINK, is_external=True)
+
+    # Create the w:hyperlink tag and add needed values
+    hyperlink = docx.oxml.shared.OxmlElement('w:hyperlink')
+    hyperlink.set(docx.oxml.shared.qn('r:id'), r_id, )
+
+    # Create a w:r element
+    new_run = docx.oxml.shared.OxmlElement('w:r')
+
+    # Create a new w:rPr element
+    rPr = docx.oxml.shared.OxmlElement('w:rPr')
+
+    # Join all the xml elements together add add the required text to the w:r element
+    new_run.append(rPr)
+    new_run.text = text
+    hyperlink.append(new_run)
+
+    paragraph._p.append(hyperlink)
+
+    return hyperlink
+
